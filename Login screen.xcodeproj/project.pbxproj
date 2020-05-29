@@ -7,23 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		844398F82481407B0033CBF2 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844398F72481407B0033CBF2 /* TabBarViewController.swift */; };
 		8446C4E82480D5A5006CBA9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8446C4E72480D5A5006CBA9C /* AppDelegate.swift */; };
 		8446C4EA2480D5A5006CBA9C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8446C4E92480D5A5006CBA9C /* SceneDelegate.swift */; };
-		8446C4EC2480D5A5006CBA9C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8446C4EB2480D5A5006CBA9C /* ViewController.swift */; };
+		8446C4EC2480D5A5006CBA9C /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8446C4EB2480D5A5006CBA9C /* LogInViewController.swift */; };
 		8446C4EF2480D5A5006CBA9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8446C4ED2480D5A5006CBA9C /* Main.storyboard */; };
 		8446C4F12480D5A6006CBA9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8446C4F02480D5A6006CBA9C /* Assets.xcassets */; };
 		8446C4F42480D5A6006CBA9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8446C4F22480D5A6006CBA9C /* LaunchScreen.storyboard */; };
+		8446C5002480E7E5006CBA9C /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8446C4FF2480E7E5006CBA9C /* WelcomeViewController.swift */; };
+		8446C5022480E80E006CBA9C /* UsersInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8446C5012480E80E006CBA9C /* UsersInfoViewController.swift */; };
+		8446C5052480E9FD006CBA9C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8446C5042480E9FD006CBA9C /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		844398F72481407B0033CBF2 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		8446C4E42480D5A5006CBA9C /* Login screen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Login screen.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8446C4E72480D5A5006CBA9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8446C4E92480D5A5006CBA9C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8446C4EB2480D5A5006CBA9C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8446C4EB2480D5A5006CBA9C /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		8446C4EE2480D5A5006CBA9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8446C4F02480D5A6006CBA9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8446C4F32480D5A6006CBA9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8446C4F52480D5A6006CBA9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8446C4FF2480E7E5006CBA9C /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		8446C5012480E80E006CBA9C /* UsersInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersInfoViewController.swift; sourceTree = "<group>"; };
+		8446C5042480E9FD006CBA9C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,59 @@
 		8446C4E62480D5A5006CBA9C /* Login screen */ = {
 			isa = PBXGroup;
 			children = (
-				8446C4E72480D5A5006CBA9C /* AppDelegate.swift */,
-				8446C4E92480D5A5006CBA9C /* SceneDelegate.swift */,
-				8446C4EB2480D5A5006CBA9C /* ViewController.swift */,
-				8446C4ED2480D5A5006CBA9C /* Main.storyboard */,
-				8446C4F02480D5A6006CBA9C /* Assets.xcassets */,
-				8446C4F22480D5A6006CBA9C /* LaunchScreen.storyboard */,
-				8446C4F52480D5A6006CBA9C /* Info.plist */,
+				8446C5032480E8A1006CBA9C /* Models */,
+				8446C4FC2480E6B4006CBA9C /* ViewControllers */,
+				8446C4FD2480E6DD006CBA9C /* Storyboards */,
+				8446C4FE2480E6FF006CBA9C /* Sources */,
+				8446C4FB2480E5F8006CBA9C /* Supporting files */,
 			);
 			path = "Login screen";
+			sourceTree = "<group>";
+		};
+		8446C4FB2480E5F8006CBA9C /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				8446C4E72480D5A5006CBA9C /* AppDelegate.swift */,
+				8446C4E92480D5A5006CBA9C /* SceneDelegate.swift */,
+				8446C4F52480D5A6006CBA9C /* Info.plist */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		8446C4FC2480E6B4006CBA9C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8446C4EB2480D5A5006CBA9C /* LogInViewController.swift */,
+				844398F72481407B0033CBF2 /* TabBarViewController.swift */,
+				8446C4FF2480E7E5006CBA9C /* WelcomeViewController.swift */,
+				8446C5012480E80E006CBA9C /* UsersInfoViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8446C4FD2480E6DD006CBA9C /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8446C4ED2480D5A5006CBA9C /* Main.storyboard */,
+				8446C4F22480D5A6006CBA9C /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		8446C4FE2480E6FF006CBA9C /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				8446C4F02480D5A6006CBA9C /* Assets.xcassets */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		8446C5032480E8A1006CBA9C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8446C5042480E9FD006CBA9C /* User.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +190,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8446C4EC2480D5A5006CBA9C /* ViewController.swift in Sources */,
+				844398F82481407B0033CBF2 /* TabBarViewController.swift in Sources */,
+				8446C4EC2480D5A5006CBA9C /* LogInViewController.swift in Sources */,
+				8446C5052480E9FD006CBA9C /* User.swift in Sources */,
+				8446C5002480E7E5006CBA9C /* WelcomeViewController.swift in Sources */,
+				8446C5022480E80E006CBA9C /* UsersInfoViewController.swift in Sources */,
 				8446C4E82480D5A5006CBA9C /* AppDelegate.swift in Sources */,
 				8446C4EA2480D5A5006CBA9C /* SceneDelegate.swift in Sources */,
 			);
@@ -286,7 +342,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YK2X3DL675;
-				INFOPLIST_FILE = "Login screen/Info.plist";
+				INFOPLIST_FILE = "Login screen/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,7 +350,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.begletskiy.Login-screen";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -304,7 +360,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YK2X3DL675;
-				INFOPLIST_FILE = "Login screen/Info.plist";
+				INFOPLIST_FILE = "Login screen/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +368,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.begletskiy.Login-screen";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
