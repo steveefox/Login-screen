@@ -10,11 +10,30 @@ import UIKit
 
 class UsersInfoViewController: UIViewController {
 
+    @IBOutlet weak var bannerLabel: UILabel!
     @IBOutlet weak var infoAboutUserTextView: UITextView!
+    @IBOutlet weak var usersInfoChanger: UISegmentedControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        infoAboutUserTextView.text = User.getUser().information
+        bannerLabel.text = "Немного обо мне:"
+        infoAboutUserTextView.text = User.getUser().aboutMe
+    }
+    
+    
+    @IBAction func changeUsersInfo(_ sender: UISegmentedControl) {
+        
+        switch usersInfoChanger.selectedSegmentIndex {
+        case 0:
+            bannerLabel.text = "Немного обо мне:"
+            infoAboutUserTextView.text = User.getUser().aboutMe
+        case 1:
+            bannerLabel.text = "Немного об учебе:"
+            infoAboutUserTextView.text = User.getUser().aboutStudy
+        default:
+            print("Something wrong!")
+        }
+        
     }
     
 }
